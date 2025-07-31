@@ -95,7 +95,9 @@ a:hover {
 /* Hero Section */
 .hero {
   position: relative;
-  height: 35vh; /* Reduced height */
+  height: 35vh !important;  /* ← force it */
+  max-height: 35vh;
+  overflow: hidden;
   background: linear-gradient(135deg, #111, #333);
   background-size: cover;
   background-position: center;
@@ -116,10 +118,14 @@ a:hover {
   background: linear-gradient(180deg, rgba(11,29,81,0.7) 0%, rgba(44,53,106,0.7) 100%);
 }
 
-.hero-content {
-  position: relative;
-  text-align: center;
-  z-index: 1;
+.hero-content h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 .hero-title {
