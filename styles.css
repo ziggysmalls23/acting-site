@@ -95,13 +95,16 @@ a:hover {
 /* Hero Section */
 .hero {
   position: relative;
+  height: 35vh; /* Reduced height */
+  background: linear-gradient(135deg, #111, #333);
   background-size: cover;
   background-position: center;
-  height: 35vh;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--text-light);
+  text-align: center;
+  padding: 1rem;
 }
 
 .hero-overlay {
