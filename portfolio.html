@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Your Name</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="nav-bar">
+        <div class="container nav-container">
+            <div class="logo"><a href="index.html">Your&nbsp;Name</a></div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Portfolio</h1>
+        </div>
+    </section>
+
+    <!-- Reel Section -->
+    <section id="reel" class="reel-section">
+        <div class="container">
+            <h2>Acting&nbsp;Reel</h2>
+            <p>My demo reel highlights performances across genres, demonstrating versatility and range. Replace the placeholder link below with your own YouTube or Vimeo embed URL.</p>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/YOUR_ACTING_REEL_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Monologue / Clips Section -->
+    <section id="clips" class="reel-section">
+        <div class="container">
+            <h2>Featured&nbsp;Scenes</h2>
+            <p>Watch a selected monologue or scene to get a feel for my dramatic abilities. Replace the placeholder link with your own video link.</p>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/YOUR_MONOLOGUE_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Headshot Gallery -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2>Headshots</h2>
+            <p>A selection of professional headshots. Click to view a larger version.</p>
+            <div class="gallery-grid">
+                <a href="assets/headshot1.jpg" target="_blank"><img src="assets/headshot1.jpg" alt="Headshot 1" /></a>
+                <a href="assets/headshot2.jpg" target="_blank"><img src="assets/headshot2.jpg" alt="Headshot 2" /></a>
+                <a href="assets/headshot3.jpg" target="_blank"><img src="assets/headshot3.jpg" alt="Headshot 3" /></a>
+                <a href="assets/headshot4.jpg" target="_blank"><img src="assets/headshot4.jpg" alt="Headshot 4" /></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-about">
+                <h4>Your&nbsp;Name</h4>
+                <p>Explore my work across film, television and stage. For full credits and booking inquiries, please get in touch.</p>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:youremail@example.com">youremail@example.com</a></li>
+                    <li><a href="#">IMDb</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">© <span id="current-year"></span> Your&nbsp;Name. All rights reserved.</div>
+    </footer>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

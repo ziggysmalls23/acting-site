@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Actor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="nav-bar">
+        <div class="container nav-container">
+            <div class="logo"><a href="index.html">Your&nbsp;Name</a></div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('assets/hero.jpg');">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">Your&nbsp;Name</h1>
+            <p class="hero-subtitle">Actor · Performer · Storyteller</p>
+            <a href="portfolio.html" class="btn btn-primary">Watch&nbsp;my&nbsp;reel</a>
+        </div>
+    </section>
+
+    <!-- About Preview Section -->
+    <section class="about-preview">
+        <div class="container about-container">
+            <div class="about-text">
+                <h2>About&nbsp;Me</h2>
+                <p>Welcome to my acting portfolio. I am a professional actor with experience in film, television, theatre and voice‑over. My passion for storytelling drives me to explore diverse roles and bring compelling characters to life.</p>
+                <p>On this website you’ll find my resume, headshots, demo reels and more. Take a look around to learn about my journey and discover why I’m the right fit for your next project.</p>
+                <a href="about.html" class="btn btn-secondary">Read&nbsp;more</a>
+            </div>
+            <div class="about-photo">
+                <img src="assets/headshot1.jpg" alt="Headshot" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Work Preview -->
+    <section class="featured-work">
+        <div class="container">
+            <h2>Featured&nbsp;Work</h2>
+            <div class="work-cards">
+                <div class="work-card">
+                    <img src="assets/headshot2.jpg" alt="Acting still" />
+                    <h3>Acting Reel</h3>
+                    <p>Check out my most recent acting reel showcasing my range of performances across different genres.</p>
+                    <a href="portfolio.html#reel" class="btn btn-tertiary">View&nbsp;reel</a>
+                </div>
+                <div class="work-card">
+                    <img src="assets/headshot3.jpg" alt="Stage performance" />
+                    <h3>Stage &amp; Screen</h3>
+                    <p>From the stage to the screen, explore highlights of my theatrical and on‑camera work.</p>
+                    <a href="portfolio.html#gallery" class="btn btn-tertiary">Explore&nbsp;portfolio</a>
+                </div>
+                <div class="work-card">
+                    <img src="assets/headshot4.jpg" alt="Resume" />
+                    <h3>Resume</h3>
+                    <p>Download my resume for a detailed list of my credits, training and special skills.</p>
+                    <a href="about.html#resume" class="btn btn-tertiary">Download&nbsp;resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-about">
+                <h4>Your&nbsp;Name</h4>
+                <p>Thank you for visiting my portfolio. I’m always excited to connect with directors, casting agents and fellow storytellers. Feel free to reach out via email or social media.</p>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:youremail@example.com">youremail@example.com</a></li>
+                    <li><a href="#">IMDb</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">© <span id="current-year"></span> Your&nbsp;Name. All rights reserved.</div>
+    </footer>
+
+    <script>
+        // Set the current year in the footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

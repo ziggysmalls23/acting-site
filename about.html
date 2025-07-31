@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Your Name</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="nav-bar">
+        <div class="container nav-container">
+            <div class="logo"><a href="index.html">Your&nbsp;Name</a></div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="page-header">
+        <div class="container">
+            <h1>About&nbsp;Me</h1>
+        </div>
+    </section>
+
+    <section class="about-detail">
+        <div class="container about-detail-container">
+            <div class="about-image">
+                <img src="assets/headshot1.jpg" alt="Portrait of Your Name" />
+            </div>
+            <div class="about-info">
+                <p>I’m an actor based in Los&nbsp;Angeles with a passion for bringing stories to life. Over the years I’ve honed my craft through intensive study and a wide range of performances—from independent films and network television to regional theatre and commercial voice‑over work.</p>
+                <p>My training includes classical theatre, on‑camera technique and improvisation, giving me the flexibility to adapt to any role. Whether portraying a comedic character or sinking into a dramatic scene, I strive to deliver authentic, engaging performances that resonate with audiences.</p>
+                <p>In addition to acting, I enjoy collaborating with directors and fellow artists to create meaningful work. When I’m not on set or stage, you’ll find me exploring new scripts, practicing dialects or volunteering with arts outreach programs.</p>
+                <p>Thank you for visiting my site—feel free to explore my portfolio and reach out if you’d like to collaborate.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume-section">
+        <div class="container">
+            <h2>Resume</h2>
+            <p>You can download my current acting resume using the link below. It outlines my film, television and theatre credits, training and special skills.</p>
+            <a href="assets/resume.pdf" class="btn btn-primary" download>Download&nbsp;Resume&nbsp;(PDF)</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-about">
+                <h4>Your&nbsp;Name</h4>
+                <p>Professional actor based in Los&nbsp;Angeles. Trained in stage and screen, dedicated to storytelling through dynamic performances.</p>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:youremail@example.com">youremail@example.com</a></li>
+                    <li><a href="#">IMDb</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">© <span id="current-year"></span> Your&nbsp;Name. All rights reserved.</div>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
