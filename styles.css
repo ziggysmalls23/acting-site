@@ -93,20 +93,12 @@ a:hover {
 }
 
 /* Hero Section */
-.hero {
+  .hero {
   position: relative;
-  height: 35vh !important;  /* ← force it */
+  height: 35vh !important;
   max-height: 35vh;
   overflow: hidden;
-  background: linear-gradient(135deg, #111, #333);
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-light);
-  text-align: center;
-  padding: 1rem;
+  z-index: 0;    
 }
 
 .hero-overlay {
@@ -118,14 +110,9 @@ a:hover {
   background: linear-gradient(180deg, rgba(11,29,81,0.7) 0%, rgba(44,53,106,0.7) 100%);
 }
 
-.hero-content h1 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.hero-content p {
-  font-size: 1rem;
-  margin-bottom: 1rem;
+.hero-content {
+  position: relative;
+  z-index: 1;                /* Bring content above background layers */
 }
 
 .hero-title {
